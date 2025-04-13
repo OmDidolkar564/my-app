@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/OmDidolkar564/my-app.git'
+                git branch: 'main', url: 'https://github.com/OmDidolkar564/my-app.git'
             }
         }
         stage('Build Docker Image') {
